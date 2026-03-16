@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Profile – UniteU</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/profile.css">
+
+</head>
+
+<body>
+
+<header class="page-header">
+  <h1>Profile</h1>
+  <button class="icon-btn">⚙</button>
+</header>
+
+<main class="profile-container">
+
+  <!-- PROFILE HEADER -->
+  <section class="card profile-header">
+
+    <div class="profile-top">
+
+      <div class="profile-left">
+        <div class="avatar" id="avatar">AJ</div>
+
+        <div>
+          <input id="nameInput" class="profile-name" value="Alex Johnson" disabled>
+
+          <div class="profile-meta">
+            <span id="locationText">📍 San Francisco</span>
+            <span id="joinText">📅 Joined September 2023</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="icon-btn" onclick="enableEdit()">✏</button>
+
+    </div>
+
+    <div class="stats">
+      <div>
+        <strong id="postsStat">0</strong>
+        <small>Posts</small>
+      </div>
+      <div>
+        <strong id="eventsStat">0</strong>
+        <small>Events</small>
+      </div>
+      <div>
+        <strong id="salesStat">0</strong>
+        <small>Items Sold</small>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- BIO -->
+  <section class="card">
+    <h3>About</h3>
+    <textarea id="bioInput" disabled>
+Passionate about AI and machine learning.
+    </textarea>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="card">
+    <h3>Education</h3>
+
+    <p id="universityText">Stanford University</p>
+    <p id="courseText">Computer Science • 3rd Year</p>
+    <p id="emailText">alex@email.com</p>
+
+  </section>
+
+  <!-- INTERESTS -->
+  <section class="card">
+    <h3>Interests</h3>
+    <div class="interest-tags" id="interestTags"></div>
+  </section>
+
+  <!-- EDIT BUTTONS -->
+  <section id="editActions" class="edit-actions hidden">
+    <button class="primary-btn" onclick="saveProfile()">Save Changes</button>
+    <button class="secondary-btn" onclick="cancelEdit()">Cancel</button>
+  </section>
+
+  <!-- LOGOUT -->
+  <button class="logout-btn" onclick="logout()">Sign Out</button>
+
+</main>
+
+<script src="js/profile.js"></script>
+
+</body>
+</html>

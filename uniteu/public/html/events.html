@@ -45,3 +45,54 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UniteU Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/auth.css">
+
+</head>
+
+<body>
+
+<header class="auth-header"></header>
+
+<main class="auth-container">
+
+  <section class="card auth-card">
+
+    <h1 class="auth-logo">UniteU</h1>
+    <p class="auth-subtitle">Sign in to your university community</p>
+
+    <!-- later change action to login.php -->
+    <form action="home.html" method="POST">
+
+      <label>Email</label>
+      <input class="input" type="email" name="email" required>
+
+      <label>Password</label>
+      <input class="input" type="password" name="password" required>
+
+      <button class="primary-btn" type="submit">
+        Sign In
+      </button>
+
+    </form>
+
+    <p class="auth-link">
+      Don't have an account?
+      <a href="register.html">Sign up</a>
+    </p>
+
+  </section>
+
+</main>
+
+<script src="js/auth.js"></script>
+
+</body>
+</html>
