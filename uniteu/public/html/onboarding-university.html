@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UniteU University</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/onboarding.css">
+<link rel="stylesheet" href="css/university.css">
+
+</head>
+
+<body>
+
+<header class="onboarding-header">
+  <button class="back-btn" onclick="goBack()">←</button>
+  <h2>Select Your University</h2>
+  <div></div>
+</header>
+
+<section class="progress">
+  <div class="progress-bar">
+    <div class="active"></div>
+    <div></div>
+    <div></div>
+  </div>
+  <small>Step 1 of 3</small>
+</section>
+
+<main class="onboarding-content">
+
+  <div class="search-box">
+    <input 
+      class="input"
+      type="text"
+      id="searchInput"
+      placeholder="Search for your university..."
+      oninput="filterUniversities()"
+    >
+  </div>
+
+  <div id="universityList" class="university-list"></div>
+
+</main>
+
+<footer class="onboarding-footer">
+  <button class="primary-btn" id="continueBtn" disabled onclick="goNext()">
+    Continue
+  </button>
+</footer>
+
+<script src="js/onboarding-university.js"></script>
+
+</body>
+</html>
