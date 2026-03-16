@@ -1,0 +1,43 @@
+.header {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  padding: 20px 40px;
+}
+
+.container {
+  max-width: 750px;
+  margin: 40px auto;
+  padding-bottom: 90px;
+}
+
+.create-post {
+  padding: 18px;
+}
+
+.feed-empty {
+  text-align: center;
+  margin-top: 70px;
+  color: #777;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: var(--card);
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+}
+
+.bottom-nav a.active {
+  color: var(--primary);
+  font-weight: 600;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UniteU Interests</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/onboarding.css">
+<link rel="stylesheet" href="public/css/interests.css">
+
+</head>
+
+<body>
+
+<header class="onboarding-header">
+  <button class="back-btn" onclick="goBack()">←</button>
+  <h2>Your Interests</h2>
+  <div></div>
+</header>
+
+<section class="progress">
+  <div class="progress-bar">
+    <div class="active"></div>
+    <div class="active"></div>
+    <div class="active"></div>
+  </div>
+  <small>Step 3 of 3</small>
+</section>
+
+<main class="onboarding-content">
+
+  <p class="muted-text">
+    Select at least 3 interests to help us connect you with like-minded students
+  </p>
+
+  <div class="interests-grid" id="interestsGrid"></div>
+
+</main>
+
+<footer class="onboarding-footer">
+  <button class="primary-btn" id="completeBtn" disabled onclick="completeSetup()">
+    Complete Setup
+  </button>
+  <p class="interest-warning" id="interestWarning"></p>
+</footer>
+
+<script src="js/onboarding-interests.js"></script>
+
+</body>
+</html>

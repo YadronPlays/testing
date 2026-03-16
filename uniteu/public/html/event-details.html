@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UniteU Event</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/event-details.css">
+
+</head>
+
+<body>
+
+<header class="event-header">
+  <button class="back-btn" onclick="goBack()">←</button>
+  <button class="share-btn">⤴</button>
+</header>
+
+<section class="event-hero" id="eventHero"></section>
+
+<main class="event-container">
+
+  <span class="tag" id="eventCategory"></span>
+  <h1 id="eventTitle"></h1>
+
+  <section class="info-grid">
+
+    <div class="card">
+      <strong>Date & Time</strong>
+      <p id="eventDate"></p>
+      <p id="eventTime"></p>
+    </div>
+
+    <div class="card">
+      <strong>Location</strong>
+      <p id="eventLocation"></p>
+    </div>
+
+    <div class="card">
+      <strong>Attendees</strong>
+      <p id="eventAttendees"></p>
+    </div>
+
+  </section>
+
+  <section class="card description">
+    <h3>About This Event</h3>
+    <p id="eventDescription"></p>
+  </section>
+
+  <section class="card organizer">
+    <div class="avatar" id="organizerAvatar"></div>
+    <div>
+      <strong id="organizerName"></strong><br>
+      <small>Event Organizer</small>
+    </div>
+  </section>
+
+  <section class="actions">
+    <button class="primary-btn">Attend Event</button>
+    <button class="secondary-btn">Interested</button>
+  </section>
+
+</main>
+
+<script src="js/event-details.js"></script>
+
+</body>
+</html>

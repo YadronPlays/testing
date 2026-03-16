@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UniteU Onboarding</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/onboarding.css">
+
+</head>
+
+<body>
+
+<header class="onboarding-header">
+  <button class="back-btn" onclick="goBack()">←</button>
+  <h2>Course & Year</h2>
+  <div></div>
+</header>
+
+<section class="progress">
+  <div class="progress-bar">
+    <div class="active"></div>
+    <div class="active"></div>
+    <div></div>
+  </div>
+  <small>Step 2 of 3</small>
+</section>
+
+<main class="onboarding-content">
+
+  <h3>Select Your Course</h3>
+  <select class="input" id="courseSelect" onchange="checkForm()">
+    <option value="">Choose a course...</option>
+    <option>Computer Science</option>
+    <option>Business Administration</option>
+    <option>Engineering</option>
+    <option>Medicine</option>
+    <option>Law</option>
+    <option>Psychology</option>
+    <option>Economics</option>
+    <option>Biology</option>
+    <option>Chemistry</option>
+    <option>Physics</option>
+    <option>Mathematics</option>
+    <option>English Literature</option>
+    <option>History</option>
+    <option>Political Science</option>
+    <option>Art & Design</option>
+  </select>
+
+  <h3 class="mt">Select Your Year</h3>
+
+  <div class="year-grid">
+    <div class="year" onclick="selectYear(this)">1st Year</div>
+    <div class="year" onclick="selectYear(this)">2nd Year</div>
+    <div class="year" onclick="selectYear(this)">3rd Year</div>
+    <div class="year" onclick="selectYear(this)">4th Year</div>
+    <div class="year" onclick="selectYear(this)">Graduate</div>
+  </div>
+
+</main>
+
+<footer class="onboarding-footer">
+  <button class="primary-btn" id="continueBtn" disabled onclick="goNext()">
+    Continue
+  </button>
+</footer>
+
+<script src="js/onboarding-course.js"></script>
+
+</body>
+</html>

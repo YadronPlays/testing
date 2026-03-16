@@ -1,0 +1,67 @@
+/* ===== UNITEU DESIGN SYSTEM ===== */
+
+:root {
+  --background: #F8F9FA;
+  --text: #212529;
+  --card: #ffffff;
+  --primary: #3B5BDB;
+  --accent: #7950F2;
+  --muted: #E9ECEF;
+  --border: #DEE2E6;
+  --danger: #dc3545;
+
+  --radius: 12px;
+  --font-main: Arial, sans-serif;
+}
+
+/* ===== BASE ===== */
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background: var(--background);
+  color: var(--text);
+}
+
+h1 { font-size: 26px; font-weight: 600; }
+h2 { font-size: 22px; font-weight: 600; }
+h3 { font-size: 18px; font-weight: 600; }
+
+button {
+  font-family: var(--font-main);
+}
+
+/* ===== COMPONENT TOKENS ===== */
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.primary-btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  opacity: 0.9;
+}
+
+.input {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+  background: white;
+}
+
+.tag {
+  background: var(--muted);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}

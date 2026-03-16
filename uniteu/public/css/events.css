@@ -1,0 +1,56 @@
+.events-header {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  padding: 20px;
+  position: sticky;
+  top: 0;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.icon-btn {
+  font-size: 22px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.search-box {
+  margin-bottom: 12px;
+}
+
+.categories {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+}
+
+.categories button {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  background: var(--muted);
+  cursor: pointer;
+}
+
+.categories .active {
+  background: var(--primary);
+  color: white;
+}
+
+.events-container {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.empty-events {
+  text-align: center;
+  margin-top: 80px;
+  color: var(--muted-foreground);
+}
